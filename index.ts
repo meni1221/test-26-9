@@ -8,6 +8,7 @@ import beeperController from './src/controllers/beeperController'
 const app:Express = exp()
 
 app.use(exp.json())
-app.use("/Beepers",beeperController)
+app.use("/beepers",beeperController)
+
 
 app.listen(process.env.PORT, ():void => console.log(`see you at http::localhost:${process.env.PORT}`))

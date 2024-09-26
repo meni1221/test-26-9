@@ -5,7 +5,7 @@ export const getFileData = async <T>(
   ): Promise<T[] | void> => {
     try {
       const strData: string = await fs.readFile(
-        `${__dirname}/../../data/${resorurce}.json`,
+        `C:/Users/menil/Desktop/kodcode/פולסטאק/Week 4/node js/Express/test 26-9/data/beepre.json`,
         "utf-8"
       );
       const persedData: T[] = JSON.parse(strData);
@@ -20,7 +20,7 @@ export const getFileData = async <T>(
   ): Promise<boolean> => {
     try {
       const stringiFiedData: string = JSON.stringify(data);
-      await fs.writeFile(`${__dirname}/../../data/${resorurce}.json`, stringiFiedData, {
+      await fs.writeFile(`C:/Users/menil/Desktop/kodcode/פולסטאק/Week 4/node js/Express/test 26-9/data/beepre.json`, stringiFiedData, {
         encoding: "utf-8",
       });
       return true;
