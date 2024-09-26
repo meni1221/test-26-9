@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7",
+    "uuid": "^10.0.0"
+  },
+  "name": "test-26-9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  },
+  "scripts": {
+    "start": "nodemon js/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
